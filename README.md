@@ -1,2 +1,4 @@
 # Haiku-Maincraft-Installer
-Simple Maincraft Installer for Haiku
+Simple Minecraft Installer for Haiku
+
+Based on https://github.com/alexivkin/minecraft-launcher project
