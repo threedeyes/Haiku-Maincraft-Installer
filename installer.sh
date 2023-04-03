@@ -1,7 +1,7 @@
 #!/bin/sh
 # Haiku Maincraft Installer based on https://github.com/alexivkin/minecraft-launcher
 
-VERSION="1.3.1"
+VERSION="1.3.2"
 
 # Check x86_64 arch
 arch=$(getarch)
@@ -20,7 +20,7 @@ USER_UUID=0
 ACCESS_TOKEN=0
 
 # Timeouts
-NOTIFY_ICON=$0
+NOTIFY_ICON=$(readlink -f "${BASH_SOURCE[0]}")
 NOTIFY_TIMEOUT=120
 NOTIFY_MSG_ID=$RANDOM
 CURL_RETRY="--connect-timeout 20 --retry 20 --retry-delay 1 --retry-max-time 45"
@@ -255,7 +255,7 @@ $JAVA \\
 EOF
 
 chmod +x $START_FILE
-copyattr -n BEOS:ICON "$0" "$START_FILE"
+copyattr -n BEOS:ICON "$NOTIFY_ICON" "$START_FILE"
 
 # Install to Deskbar menu
 APP_MENU_DIR="`finddir B_USER_SETTINGS_DIRECTORY`/deskbar/menu/Applications"
