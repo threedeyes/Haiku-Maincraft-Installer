@@ -14,7 +14,7 @@ fi
 JAVA="/system/lib/openjdk17/bin/java"
 TESTED_VERSIONS_LIST="1.13.2 1.14.4 1.15.2 1.16.5 1.17.1 1.18.2 1.19.4"
 MAINLINE_VERSIONS_JSON=https://launchermeta.mojang.com/mc/game/version_manifest.json
-LWJGL_HAIKU_URI=https://haikuware.ru/files/lwjgl3/lwjgl-3.3.2-haiku-minimal-x64.zip
+LWJGL_HAIKU_URI=https://github.com/threedeyes/lwjgl3-haiku/releases/download/3.3.2/lwjgl-3.3.2-haiku-x64-minimal.zip
 EULA_URI="https://minecraft.net/en-us/eula"
 USER_UUID=0
 ACCESS_TOKEN=0
